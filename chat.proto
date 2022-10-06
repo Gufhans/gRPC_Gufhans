@@ -1,0 +1,13 @@
+syntax = "proto3";
+option go_package = "github.com/Gufhans/gRPC_Gufhans/chat";
+package chat;
+
+service sendMessage
+{
+    rpc SayHello(Message) returns (Message) {} 
+    rpc SayFuckJohan(Message) returns (Message) {}
+}
+
+message Message {
+    string body = 1;
+}
